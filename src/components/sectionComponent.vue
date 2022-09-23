@@ -27,8 +27,9 @@ export default {
 </script>
   
 <style scoped lang="scss">
+    $sfondoNero: #1c1c1c;
 section {   
-background-color: rgb(235, 125, 0);
+background-color: $sfondoNero;
 height: 100px;
 
 }
