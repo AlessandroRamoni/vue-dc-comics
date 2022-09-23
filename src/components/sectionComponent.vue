@@ -1,20 +1,34 @@
 <template>
     <section>
         <div class="container">
-        <h1>Content goes here</h1>
-    </div>
+        <div class="card-container">
+            <div class="card" v-for="card in cards" :key="card.series">{{ card.series }}
+             <cardComponent />
+            </div>
+           
+        </div>
+        </div>
     </section>
 </template>
  
 <script>
+
+import cardComponent from "./cardComponent.vue";
+
 export default {
     name: "sectionComponent",
+    props:{
+        cards: Array
+    },
+    components: {
+    cardComponent,
+},
 };
 </script>
   
 <style scoped lang="scss">
 section {   
-background-color: rgb(0, 0, 0);
+background-color: rgb(235, 125, 0);
 height: 100px;
 
 }
@@ -29,4 +43,8 @@ h1 {
     color: #ffffff;
     font-size: 1.3em;
 }
+
+// .card-container {
+//     display: flex;
+// }
 </style>

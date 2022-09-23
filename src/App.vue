@@ -1,7 +1,7 @@
 <template>
   <div>
     <headerComponent />
-    <sectionComponent />
+    <sectionComponent :cards="products" />
     <navComponent />
     <mainComponent />
     <footerComponent />
@@ -15,9 +15,16 @@ import sectionComponent from "./components/sectionComponent.vue";
 import navComponent from "./components/navComponent.vue";
 import footerComponent from "./components/footerComponent.vue";
 
+import {products} from "./data/data"
 
 export default {
   name: "App",
+  data(){
+    return {
+      products
+    }
+    
+  },
   components: {
     headerComponent,
     mainComponent,
