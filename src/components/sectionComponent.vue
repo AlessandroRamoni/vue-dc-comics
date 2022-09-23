@@ -14,6 +14,9 @@ export default {
 section {   
 background-color: rgb(0, 0, 0);
 height: 100px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
 }
 h1 {
     color: #ffffff;

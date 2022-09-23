@@ -5,16 +5,16 @@
     </div>
     <div id="contenitore-opzioni">
       <ul id="opzioni">
-        <li>CHARACTERS</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li><a href="">CHARACTERS</a></li>
+        <li><a href="">COMICS</a></li>
+        <li><a href="">MOVIES</a></li>
+        <li><a href="">TV</a></li>
+        <li><a href="">GAMES</a></li>
+        <li><a href="">COLLECTIBLES</a></li>
+        <li><a href="">VIDEOS</a></li>
+        <li><a href="">FANS</a></li>
+        <li><a href="">NEWS</a></li>
+        <li><a href="">SHOP</a></li>
       </ul>
     </div>
   </header>
@@ -28,10 +28,11 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background-color: red;
+  background-color:#ffffff;
   height: 150px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #contenitore-immagine {
  line-height: 10px;
@@ -48,6 +49,10 @@ header {
 #opzioni li {
    padding-right: 20px;
    font-size: 0.8em;
+   color: #252525;
+   font-weight: 600;
 }
-
+#opzioni li:hover {
+  color: #0282f9;
+}
 </style>

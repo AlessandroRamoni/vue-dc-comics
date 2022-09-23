@@ -32,4 +32,10 @@ ul li {
     padding: 20px 0px;
     font-size: 0.7em;
 }
+ul li a img {
+    width: 50px;
+}
+ul li a {
+    padding-right: 10px;
+}
 </style>
