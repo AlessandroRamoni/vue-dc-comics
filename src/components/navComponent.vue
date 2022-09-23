@@ -19,8 +19,6 @@ export default {
 <style scoped lang="scss">
 nav {
     background-color: #0282f9;
-    background-image: url(../assets/img/dc-logo-bg.png);
-    background-position: left;
 }
 ul {
     display: flex;
