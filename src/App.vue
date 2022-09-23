@@ -15,7 +15,7 @@ import sectionComponent from "./components/sectionComponent.vue";
 import navComponent from "./components/navComponent.vue";
 import footerComponent from "./components/footerComponent.vue";
 
-import {products} from "./data/data"
+import {products} from "./data/data.js"
 
 export default {
   name: "App",
