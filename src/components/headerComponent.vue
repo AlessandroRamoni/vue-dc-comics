@@ -1,5 +1,6 @@
 <template>
   <header>
+    <div class="container">
     <div id="contenitore-immagine">
       <img src="../assets/img/dc-logo.png" alt="" />
     </div>
@@ -17,6 +18,7 @@
         <li><a href="">SHOP</a></li>
       </ul>
     </div>
+    </div>
   </header>
 </template>
 
@@ -30,6 +32,11 @@ export default {
 header {
   background-color:#ffffff;
   height: 150px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;

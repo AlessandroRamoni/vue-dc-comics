@@ -1,5 +1,6 @@
 <template>
     <main>
+        <div class="container">
         <div id="left-ul">
         <ul>
             <li>DC COMICS</li>
@@ -43,6 +44,7 @@
             <li>Give Up!!!</li>
             </ul>
         </div>
+    </div>
     </main>
 </template>
   
@@ -56,11 +58,16 @@ export default {
     main {
         background-image: url(../assets/img/footer-bg.jpg);
         height: 300px;
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
     }
   
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
 #left-ul {
     padding-left: 30px;
 }

@@ -1,5 +1,6 @@
 <template>
     <footer>
+        <div class="container">
         <div><button>SIGN-UP NOW!</button></div>
         <div id="social">
             <div>FOLLOW US</div>
@@ -11,6 +12,7 @@
                 <img src="../assets/img/footer-youtube.png" alt="">
             </div>
         </div>
+    </div>
     </footer>
 </template>
  
@@ -24,10 +26,15 @@ export default {
 footer {
     background-color: #303030;
     height: 100px;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
 }
+
 footer div button {
     height: 50px;
     padding: 5px;
