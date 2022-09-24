@@ -31,15 +31,20 @@ export default {
 section {   
 background-color: $sfondoNero;
 height: 100px;
-
 }
-.container {
+
+@mixin stileContainer {
     margin: 0 auto;
     max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+
+.container {
+    @include stileContainer
+}
+
 h1 {
     color: #ffffff;
     font-size: 1.3em;

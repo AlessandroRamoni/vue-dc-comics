@@ -58,8 +58,10 @@ header {
    font-size: 0.8em;
    color: #252525;
    font-weight: 600;
+   &:hover {
+     color: #0282f9;
+   }
 }
-#opzioni li:hover {
-  color: #0282f9;
-}
+
+ 
 </style>
