@@ -7,6 +7,7 @@
           :immagine="card.thumb"
           :testo="card.series"
           :prezzo="card.price"
+          :genere="card.type"
           :key="index"
         />
       </div>
