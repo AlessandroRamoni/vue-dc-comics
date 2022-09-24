@@ -3,7 +3,7 @@
     <img :src="immagine" />
     <div id="layout">
       <p>{{ testo }}</p>
-      <p id="prezzo">prezzo: {{ prezzo }}</p>
+      <p id="prezzo">{{ prezzo }}</p>
       <p id="genere">{{ genere }}</p>
     </div>
   </div>
@@ -32,21 +32,24 @@ export default {
   p {
     color: #ffffff;
   }
-  #prezzo {
+  #genere {
     color: #6a97eb;
     font-size: 0.7em;
   }
   #layout p {
     padding-top: 5px;
   }
-  #genere {
+  #prezzo {
+    background-color: #6a97eb;
+    border-radius: 50%;
+    padding: 2px;
     color: red;
     font-size: 1em;
     position: absolute;
-    top: 30px;
-    right: -5px;
+    top: 7px;
+    right: 0px;
     transform: rotate(45deg);
-    animation: colors 3s linear infinite;
+    animation: colors 5s linear infinite;
     @keyframes colors {
       25% {
         color: red;
@@ -55,10 +58,13 @@ export default {
         color: green;
       }
       75% {
-        color: #ffffff;
+        color: red;
+      }
+      90% {
+        color: rgb(240, 220, 38);
       }
       100% {
-        color: rgb(240, 220, 38);
+        color: red;
       }
     }
   }
