@@ -1,28 +1,23 @@
 <template>
     <section>
         <div class="container">
-        <div class="card-container">
-            <div class="card" v-for="card in cards" :key="card.series">{{ card.series }}
-             <cardComponent />
+            <div class="card-container">
+                <div class="card" v-for="card in cards" :key="card.series">{{ card.series }}
+                </div>
             </div>
-           
-        </div>
         </div>
     </section>
 </template>
  
 <script>
 
-import cardComponent from "./cardComponent.vue";
+
 
 export default {
     name: "sectionComponent",
     props:{
         cards: Array
     },
-    components: {
-    cardComponent,
-},
 };
 </script>
   
@@ -42,7 +37,7 @@ height: 100px;
 }
 
 .container {
-    @include stileContainer
+    @include stileContainer()
 }
 
 h1 {
