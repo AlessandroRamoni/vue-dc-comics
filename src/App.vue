@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <headerComponent />
     <sectionComponent :cards="products" />
     <navComponent />
@@ -15,15 +15,14 @@ import sectionComponent from "./components/sectionComponent.vue";
 import navComponent from "./components/navComponent.vue";
 import footerComponent from "./components/footerComponent.vue";
 
-import {products} from "./data/data.js"
+import { products } from "./data/data.js";
 
 export default {
   name: "App",
-  data(){
+  data() {
     return {
-      products
-    }
-    
+      products,
+    };
   },
   components: {
     headerComponent,
@@ -36,15 +35,9 @@ export default {
 </script>
 
 <style lang="scss">
-
-  @import "./components/style/generics.scss";
-
+@import "./components/style/generics.scss";
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 #app {
- padding: 0;
- margin: 0;
- box-sizing: border-box;
- margin: 0 auto;
- max-width: 1000px;
- height: 100vh;
+  font-family: "Luckiest Guy", cursive;
 }
 </style>

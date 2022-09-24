@@ -5,6 +5,8 @@
         <CardComponent
           v-for="(card, index) in cards"
           :immagine="card.thumb"
+          :testo="card.series"
+          :prezzo="card.price"
           :key="index"
         />
       </div>
@@ -31,6 +33,7 @@ $sfondoNero: #1c1c1c;
 section {
   background-color: $sfondoNero;
   height: 500px;
+  align-items: center;
 }
 
 @mixin stileContainer {
