@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <headerComponent />
+    <herobanner-component />
     <sectionComponent :cards="products" />
     <navComponent />
     <mainComponent />
@@ -16,6 +17,7 @@ import navComponent from "./components/navComponent.vue";
 import footerComponent from "./components/footerComponent.vue";
 
 import { products } from "./data/data.js";
+import HerobannerComponent from "./components/herobannerComponent.vue";
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     navComponent,
     sectionComponent,
     footerComponent,
+    HerobannerComponent,
   },
 };
 </script>
