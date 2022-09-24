@@ -50,7 +50,6 @@ section {
 
 .card-container {
   width: 1000px;
-  height: 100px;
   padding-top: 30px;
   display: flex;
   justify-content: center;
