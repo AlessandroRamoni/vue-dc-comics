@@ -14,6 +14,6 @@ div {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 250px;
+  height: 300px;
 }
 </style>
