@@ -15,7 +15,7 @@ export default {
   props: {
     immagine: String,
     testo: String,
-    prezzo: Number,
+    prezzo: String,
     genere: String,
   },
 };
